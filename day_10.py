@@ -1,16 +1,18 @@
+import todo_functions
+
 task = ["Running" , "Walking" , "Exercising" , "Yoga"]
 
 
 while True : 
-  show_menu()
+  todo_functions.show_menu()
 
   choice = input("Enter a choice(1-3) : ")
 
   if choice == "1":
-    add_task(task)
+    todo_functions.add_task(task)
 
   elif choice == "2":
-    view_task(task)
+    todo_functions.view_task(task)
 
   elif choice == "3":
     print("Goodbye.")
